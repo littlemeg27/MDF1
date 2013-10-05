@@ -10,9 +10,11 @@
 
 @interface MDF1ViewController : UIViewController
 {
-    IBOutlet UITableView *baseTableView;
+    IBOutlet UITableView *tableView;
     
-    NSArray *stringArray1;
+    NSMutableArray *stringArray1;
     NSMutableArray *stringArray2;
+    
+    IBOutlet UIButton *editButton;
 }
 @end

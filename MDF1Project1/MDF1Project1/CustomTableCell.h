@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomTableCell : UITableViewCell
-
+{
+    IBOutlet UILabel *textLabel;
+    IBOutlet UILabel *textLabel2;
+}
 @end

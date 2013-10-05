@@ -26,6 +26,8 @@
 		BACD779A17FD284E0023F1B2 /* MDF1Project1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD779917FD284E0023F1B2 /* MDF1Project1Tests.m */; };
 		BACD77A417FE4F120023F1B2 /* CustomCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BACD77A317FE4F120023F1B2 /* CustomCellView.xib */; };
 		BACD77A717FE5CDC0023F1B2 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BACD77A617FE5CDC0023F1B2 /* CustomTableCell.m */; };
+		BACD77A917FF95E40023F1B2 /* Chair2.png in Resources */ = {isa = PBXBuildFile; fileRef = BACD77A817FF95E40023F1B2 /* Chair2.png */; };
+		BACD77AB17FF95EE0023F1B2 /* The Voice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BACD77AA17FF95EE0023F1B2 /* The Voice.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		BACD77A317FE4F120023F1B2 /* CustomCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCellView.xib; sourceTree = "<group>"; };
 		BACD77A517FE5CDC0023F1B2 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableCell.h; sourceTree = "<group>"; };
 		BACD77A617FE5CDC0023F1B2 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableCell.m; sourceTree = "<group>"; };
+		BACD77A817FF95E40023F1B2 /* Chair2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chair2.png; sourceTree = SOURCE_ROOT; };
+		BACD77AA17FF95EE0023F1B2 /* The Voice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "The Voice.jpg"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +128,8 @@
 		BACD776B17FD284D0023F1B2 /* MDF1Project1 */ = {
 			isa = PBXGroup;
 			children = (
+				BACD77AA17FF95EE0023F1B2 /* The Voice.jpg */,
+				BACD77A817FF95E40023F1B2 /* Chair2.png */,
 				BACD777417FD284D0023F1B2 /* MDF1AppDelegate.h */,
 				BACD777517FD284D0023F1B2 /* MDF1AppDelegate.m */,
 				BACD777D17FD284E0023F1B2 /* MDF1ViewController.h */,
@@ -250,6 +256,8 @@
 				BACD778217FD284E0023F1B2 /* MDF1ViewController_iPhone.xib in Resources */,
 				BACD778517FD284E0023F1B2 /* MDF1ViewController_iPad.xib in Resources */,
 				BACD77A417FE4F120023F1B2 /* CustomCellView.xib in Resources */,
+				BACD77A917FF95E40023F1B2 /* Chair2.png in Resources */,
+				BACD77AB17FF95EE0023F1B2 /* The Voice.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
