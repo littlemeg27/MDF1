@@ -37,18 +37,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-//Choose if we edit or delete
--(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath 
-{
-    if(editButton.tag == 0)
-    {
-        return UITableViewCellEditingStyleDelete;
-    }
-    else if(editButton.tag == 1)
-    {
-        return UITableViewCellEditingStyleInsert;
-    }
-}
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -82,7 +70,7 @@
         NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
         
         for(UIView *view in views)
-        {
+        {    
             if([view isKindOfClass:[CustomTableCell class]])
             {
                 cellRow = (CustomTableCell*)view;
@@ -96,5 +84,12 @@
     }
 
     return cellRow;
+}
+
+-(IBAction)onClick:(id)sender
+{
+    
+
+    
 }
 @end
