@@ -77,7 +77,7 @@
                 
                 cellRow.textLabel.text = [stringArray1 objectAtIndex:indexPath.row];
                 
-                cellRow.detailTextLabel.text = [stringArray2 objectAtIndex:indexPath.row];
+                cellRow.textLabel.text = [stringArray2 objectAtIndex:indexPath.row];
                 
             }
         }
