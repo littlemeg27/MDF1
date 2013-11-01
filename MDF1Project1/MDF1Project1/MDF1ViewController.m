@@ -11,9 +11,13 @@
 
 @interface MDF1ViewController ()
 
+@property (readonly) UILabel *textLabel;
+@property (readonly) UILabel *detailTextLabel;
+
 @end
 
 @implementation MDF1ViewController
+
 
 - (void)viewDidLoad
 {
@@ -27,7 +31,6 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
-    [tableView setEditing:TRUE];
     [super viewDidAppear:animated];
 }
 
@@ -40,7 +43,7 @@
 
 -(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if(editingStyle == UITableViewCellEditingStyleDelete) //Removes an item from the list
+    /*if(editingStyle == UITableViewCellEditingStyleDelete) //Removes an item from the list
     {
         [stringArray1 removeObjectAtIndex:indexPath.row];
         
@@ -51,7 +54,7 @@
         [stringArray1 insertObject:@"Test" atIndex: indexPath.row];
         
         [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:TRUE];
-    }
+    }*/
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //Creates table view
@@ -65,6 +68,7 @@
     
     CustomTableCell *cellRow  = [tableView dequeueReusableCellWithIdentifier: cellIdentity];
     
+    
     if(cellRow == nil)
     {
         NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
@@ -77,8 +81,7 @@
                 
                 cellRow.textLabel.text = [stringArray1 objectAtIndex:indexPath.row];
                 
-                cellRow.textLabel.text = [stringArray2 objectAtIndex:indexPath.row];
-                
+                cellRow.detailTextLabel.text = [stringArray2 objectAtIndex:indexPath.row];
             }
         }
     }
@@ -86,10 +89,14 @@
     return cellRow;
 }
 
--(IBAction)onClick:(id)sender
+-(IBAction)editButton:(id)sender
 {
-    
-
-    
+    [tableView setEditing:TRUE];    
 }
+
+-(CGFloat)tableView:(UITableViewCell *)sender heightForRowAtIndexPath:(NSIndexPath *)indexPath; //Changes the height of the cells to the right size. 
+{
+    return tableView.rowHeight * 2;
+}
+
 @end
