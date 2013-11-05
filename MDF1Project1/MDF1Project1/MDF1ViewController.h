@@ -14,7 +14,13 @@
     
     NSMutableArray *stringArray1;
     NSMutableArray *stringArray2;
+    UIAlertView *editAlert;
+    BOOL editMode;
     
     IBOutlet UIButton *editButton;
 }
+
+-(void)alertView:(UIAlertView *)alertView;
+
+
 @end

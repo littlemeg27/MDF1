@@ -18,9 +18,9 @@
 
 - (void)viewDidLoad
 {
-    stringArray1 = [[NSMutableArray alloc] initWithObjects:@"Catherine Ochoa", @"Kris Thomas", @"Brandon Roush", @"Caroline Glaser", @"Cáthia", @"Michelle Chamuel", @"Patrick Dodd", @"Sasha Allen", @"Jermaine Paul", @"Amanda Brown", @"Nicholas David", @"De'Borah Garner", @"Mackenzie Bourg", @"Terry McDermott", @"Tony Lucca", @"Jamar Rogers", @"Juliet Simms", @"Lindsey Pavao", @"Erin Wilett", nil];
+    stringArray1 = [[NSMutableArray alloc] initWithObjects:@"Catherine Ochoa", @"Kris Thomas", @"Brandon Roush", @"Caroline Glaser", @"Cáthia", @"Michelle Chamuel", @"Patrick Dodd", @"Sasha Allen", @"Jermaine Paul", @"Amanda Brown", @"Nicholas David", @"De'Borah Garner", @"Mackenzie Bourg", @"Terry McDermott", @"Tony Lucca", @"Jamar Rogers", @"Juliet Simms", @"Lindsey Pavao", @"Erin Wilett", nil]; //First array for tableView
     
-    stringArray2 = [[NSMutableArray alloc] initWithObjects:@"Team Shakira", @"Team Shakira", @"Team Adam", @"Team Adam", @"Team Usher", @"Team Usher", @"Team Adam", @"Team Shakira", @"Team Blake", @"Team Adam", @"Team Blake", @"Team Xtina", @"Team Blake", @"Team Blake", @"Team Adam", @"Team CeeLo", @"Team CeeLo", @"Team Xtina", @"Team Blake", nil];
+    stringArray2 = [[NSMutableArray alloc] initWithObjects:@"Team Shakira", @"Team Shakira", @"Team Adam", @"Team Adam", @"Team Usher", @"Team Usher", @"Team Adam", @"Team Shakira", @"Team Blake", @"Team Adam", @"Team Blake", @"Team Xtina", @"Team Blake", @"Team Blake", @"Team Adam", @"Team CeeLo", @"Team CeeLo", @"Team Xtina", @"Team Blake", nil]; //Second array for tableView
 
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
@@ -37,22 +37,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-
--(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    /*if(editingStyle == UITableViewCellEditingStyleDelete) //Removes an item from the list
-    {
-        [stringArray1 removeObjectAtIndex:indexPath.row];
-        
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:TRUE];
-    }
-    else if(editingStyle == UITableViewCellEditingStyleInsert) //Adds an item to the list
-    {
-        [stringArray1 insertObject:@"Test" atIndex: indexPath.row];
-        
-        [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:TRUE];
-    }*/
+    return UITableViewCellEditingStyleDelete;
 }
+
+
+-(void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath //We need this to do the editing of our tableView
+{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+    {
+        NSLog(@"I want to delete: %d", indexPath.row);
+        
+        [stringArray1 removeObjectAtIndex:indexPath.row];
+        [stringArray2 removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:TRUE];
+    }
+}
+
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //Creates table view
 {
@@ -93,8 +96,8 @@
     
     if(detailView !=nil) 
     {
-        detailView.name = [stringArray1 objectAtIndex:indexPath.row]; //Show the 
-        detailView.team = [stringArray2 objectAtIndex:indexPath.row];
+        detailView.name = [stringArray1 objectAtIndex:indexPath.row]; //Show the name on the detail page
+        detailView.team = [stringArray2 objectAtIndex:indexPath.row]; //Show the team on the detail page
         [self presentViewController:detailView animated:YES completion:nil];
         [detailView updateUILabel];
     }
@@ -102,7 +105,19 @@
 
 -(IBAction)editButton:(id)sender
 {
-    [tableView setEditing:TRUE];    
+    if(editMode == FALSE) //Ask what type of editing mode
+    {
+        [tableView setEditing:TRUE]; 
+        [editButton setTitle:@"Finish" forState: UIControlStateNormal];
+        editMode = TRUE; //Reset to not be in editing mode
+    }
+    else
+    {
+        [tableView setEditing:FALSE];
+        [editButton setTitle:@"Edit" forState:UIControlStateNormal];
+        editMode = FALSE;
+    }
+    
 }
 
 -(CGFloat)tableView:(UITableViewCell *)sender heightForRowAtIndexPath:(NSIndexPath *)indexPath; //Changes the height of the cells to the right size. 

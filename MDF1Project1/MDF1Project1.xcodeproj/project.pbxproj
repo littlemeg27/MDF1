@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		BABF931218282ED600749799 /* DetailViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BABF931118282ED600749799 /* DetailViewViewController.m */; };
 		BABF931418282FD300749799 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABF931318282FD300749799 /* DetailView.xib */; };
+		BABF93161828CA5C00749799 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABF93151828CA5C00749799 /* Default-568h@2x.png */; };
+		BABF93181828CA6800749799 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BABF93171828CA6800749799 /* Default@2x.png */; };
+		BABF931A1828CA9900749799 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BABF93191828CA9900749799 /* Default.png */; };
+		BABF931C1828CAAD00749799 /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BABF931B1828CAAD00749799 /* Default-Portrait@2x~ipad.png */; };
+		BABF931E1828CAC100749799 /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = BABF931D1828CAC100749799 /* Default-Landscape@2x~ipad.png */; };
+		BABF93201828D1AD00749799 /* appImage.png in Resources */ = {isa = PBXBuildFile; fileRef = BABF931F1828D1AD00749799 /* appImage.png */; };
+		BABF93221828D21200749799 /* appImage2.png in Resources */ = {isa = PBXBuildFile; fileRef = BABF93211828D21200749799 /* appImage2.png */; };
 		BACD776617FD284D0023F1B2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACD776517FD284D0023F1B2 /* UIKit.framework */; };
 		BACD776817FD284D0023F1B2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACD776717FD284D0023F1B2 /* Foundation.framework */; };
 		BACD776A17FD284D0023F1B2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BACD776917FD284D0023F1B2 /* CoreGraphics.framework */; };
@@ -46,6 +53,13 @@
 		BABF931018282ED600749799 /* DetailViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewViewController.h; sourceTree = "<group>"; };
 		BABF931118282ED600749799 /* DetailViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewViewController.m; sourceTree = "<group>"; };
 		BABF931318282FD300749799 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		BABF93151828CA5C00749799 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BABF93171828CA6800749799 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BABF93191828CA9900749799 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BABF931B1828CAAD00749799 /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		BABF931D1828CAC100749799 /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		BABF931F1828D1AD00749799 /* appImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appImage.png; sourceTree = "<group>"; };
+		BABF93211828D21200749799 /* appImage2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = appImage2.png; sourceTree = "<group>"; };
 		BACD776217FD284D0023F1B2 /* MDF1Project1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1Project1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BACD776517FD284D0023F1B2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BACD776717FD284D0023F1B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -103,6 +117,13 @@
 		BACD775917FD284D0023F1B2 = {
 			isa = PBXGroup;
 			children = (
+				BABF93211828D21200749799 /* appImage2.png */,
+				BABF931F1828D1AD00749799 /* appImage.png */,
+				BABF931D1828CAC100749799 /* Default-Landscape@2x~ipad.png */,
+				BABF931B1828CAAD00749799 /* Default-Portrait@2x~ipad.png */,
+				BABF93191828CA9900749799 /* Default.png */,
+				BABF93171828CA6800749799 /* Default@2x.png */,
+				BABF93151828CA5C00749799 /* Default-568h@2x.png */,
 				BACD776B17FD284D0023F1B2 /* MDF1Project1 */,
 				BACD779217FD284E0023F1B2 /* MDF1Project1Tests */,
 				BACD776417FD284D0023F1B2 /* Frameworks */,
@@ -267,6 +288,13 @@
 				BACD77A917FF95E40023F1B2 /* Chair2.png in Resources */,
 				BACD77AB17FF95EE0023F1B2 /* The Voice.jpg in Resources */,
 				BABF931418282FD300749799 /* DetailView.xib in Resources */,
+				BABF93161828CA5C00749799 /* Default-568h@2x.png in Resources */,
+				BABF93181828CA6800749799 /* Default@2x.png in Resources */,
+				BABF931A1828CA9900749799 /* Default.png in Resources */,
+				BABF931C1828CAAD00749799 /* Default-Portrait@2x~ipad.png in Resources */,
+				BABF931E1828CAC100749799 /* Default-Landscape@2x~ipad.png in Resources */,
+				BABF93201828D1AD00749799 /* appImage.png in Resources */,
+				BABF93221828D21200749799 /* appImage2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
