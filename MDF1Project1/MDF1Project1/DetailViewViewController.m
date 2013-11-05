@@ -45,4 +45,9 @@
     teamLabel.text = team;
 }
 
+-(IBAction)backButton:(id)sender
+{
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+}
+
 @end

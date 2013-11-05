@@ -12,10 +12,13 @@
 {
     IBOutlet UILabel* nameLabel;
     IBOutlet UILabel* teamLabel;
+    IBOutlet UIButton* backButton;
 }
+
 @property(nonatomic, copy) NSString* name;
 @property(nonatomic, copy) NSString* team;
 
 -(void)updateUILabel;
+-(IBAction)backButton:(id)sender;
 
 @end
