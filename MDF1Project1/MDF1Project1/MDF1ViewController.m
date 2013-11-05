@@ -89,11 +89,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    DetailViewViewController *detailView = [[DetailViewViewController alloc] initWithNibName:@"DetailView" bundle:nil];
+    DetailViewViewController *detailView = [[DetailViewViewController alloc] initWithNibName:@"DetailView" bundle:nil]; //Pop to the detail page
     
-    if(detailView !=nil)
+    if(detailView !=nil) 
     {
-        detailView.name = [stringArray1 objectAtIndex:indexPath.row];
+        detailView.name = [stringArray1 objectAtIndex:indexPath.row]; //Show the 
         detailView.team = [stringArray2 objectAtIndex:indexPath.row];
         [self presentViewController:detailView animated:YES completion:nil];
         [detailView updateUILabel];
