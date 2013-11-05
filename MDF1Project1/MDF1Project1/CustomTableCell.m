@@ -10,6 +10,9 @@
 
 @implementation CustomTableCell
 
+@synthesize nameLabel;
+@synthesize teamLabel;
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDF1ViewController : UIViewController
+@interface MDF1ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UITableView *tableView;
     

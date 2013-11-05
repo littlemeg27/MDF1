@@ -8,16 +8,13 @@
 
 #import "MDF1ViewController.h"
 #import "CustomTableCell.h"
+#import "DetailViewViewController.h"
 
 @interface MDF1ViewController ()
-
-@property (readonly) UILabel *textLabel;
-@property (readonly) UILabel *detailTextLabel;
 
 @end
 
 @implementation MDF1ViewController
-
 
 - (void)viewDidLoad
 {
@@ -79,14 +76,27 @@
             {
                 cellRow = (CustomTableCell*)view;
                 
-                cellRow.textLabel.text = [stringArray1 objectAtIndex:indexPath.row];
+                cellRow.nameLabel.text = [stringArray1 objectAtIndex:indexPath.row];
                 
-                cellRow.detailTextLabel.text = [stringArray2 objectAtIndex:indexPath.row];
+                cellRow.teamLabel.text = [stringArray2 objectAtIndex:indexPath.row];
             }
         }
     }
 
     return cellRow;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+{
+    DetailViewViewController *detailView = [[DetailViewViewController alloc] initWithNibName:@"DetailView" bundle:nil];
+    
+    if(detailView !=nil)
+    {
+        detailView.genre = @"pop";
+        [self presentViewController:detailView animated:YES completion:nil];
+        [detailView updateUILabel];
+    }
 }
 
 -(IBAction)editButton:(id)sender

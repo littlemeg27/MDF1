@@ -10,6 +10,10 @@
 
 @interface CustomTableCell : UITableViewCell
 {
-    IBOutlet UILabel *textLabel;
+    IBOutlet UILabel *nameLabel;
+    IBOutlet UILabel *teamLabel;
 }
+
+@property (nonatomic, strong) UILabel* nameLabel;
+@property (nonatomic, strong) UILabel* teamLabel;
 @end
