@@ -7,6 +7,9 @@
 //
 
 #import "MDF1ViewController.h"
+#import "iPhoneViewController.h"
+#import "iPadViewController.h"
+#import "MacViewController.h"
 
 @interface MDF1ViewController ()
 
@@ -31,6 +34,16 @@
     self.title = @"MDF1 App"; //Title of the app
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
     [super viewWillAppear:animated];
+}
+
+-(IBAction)onClick:(id)sender
+{
+    iPhoneViewController *iPhoneView = [[iPhoneViewController alloc] initWithNibName:@"iPhoneView" bundle:nil];
+    
+    if(iPhoneView !=nil)
+    {
+        [self.navigationController pushViewController:iPhoneView animated:TRUE]; //Makes the move to the iphone view
+    }
 }
 
 @end

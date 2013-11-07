@@ -1,5 +1,5 @@
 //
-//  MDF1ViewController.h
+//  MacViewController.h
 //  MDF1Project2
 //
 //  Created by Brenna Pavlinchak on 11/6/13.
@@ -8,11 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDF1ViewController : UIViewController
-{
+@interface MacViewController : UIViewController
 
-}
-
--(IBAction)onClick:(id)sender;
+-(IBAction)backButton:(id)sender;
 
 @end

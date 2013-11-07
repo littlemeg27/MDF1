@@ -23,6 +23,12 @@
 		BAD74A84182B14EB00EBD407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD74A5C182B14EB00EBD407 /* Foundation.framework */; };
 		BAD74A8C182B14EB00EBD407 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAD74A8A182B14EB00EBD407 /* InfoPlist.strings */; };
 		BAD74A8F182B14EB00EBD407 /* MDF1Project2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD74A8E182B14EB00EBD407 /* MDF1Project2Tests.m */; };
+		BAD74A99182B431200EBD407 /* iPhoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD74A98182B431200EBD407 /* iPhoneView.xib */; };
+		BAD74A9C182B434700EBD407 /* iPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD74A9B182B434700EBD407 /* iPhoneViewController.m */; };
+		BAD74A9E182B490100EBD407 /* iPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD74A9D182B490100EBD407 /* iPadView.xib */; };
+		BAD74AA1182B492A00EBD407 /* iPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD74AA0182B492A00EBD407 /* iPadViewController.m */; };
+		BAD74AA3182B49F400EBD407 /* MacView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD74AA2182B49F400EBD407 /* MacView.xib */; };
+		BAD74AA6182B4A0800EBD407 /* MacViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD74AA5182B4A0800EBD407 /* MacViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,15 @@
 		BAD74A8B182B14EB00EBD407 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BAD74A8D182B14EB00EBD407 /* MDF1Project2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDF1Project2Tests.h; sourceTree = "<group>"; };
 		BAD74A8E182B14EB00EBD407 /* MDF1Project2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF1Project2Tests.m; sourceTree = "<group>"; };
+		BAD74A98182B431200EBD407 /* iPhoneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPhoneView.xib; sourceTree = "<group>"; };
+		BAD74A9A182B434700EBD407 /* iPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneViewController.h; sourceTree = "<group>"; };
+		BAD74A9B182B434700EBD407 /* iPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneViewController.m; sourceTree = "<group>"; };
+		BAD74A9D182B490100EBD407 /* iPadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = iPadView.xib; sourceTree = "<group>"; };
+		BAD74A9F182B492A00EBD407 /* iPadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadViewController.h; sourceTree = "<group>"; };
+		BAD74AA0182B492A00EBD407 /* iPadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadViewController.m; sourceTree = "<group>"; };
+		BAD74AA2182B49F400EBD407 /* MacView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MacView.xib; sourceTree = "<group>"; };
+		BAD74AA4182B4A0800EBD407 /* MacViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MacViewController.h; sourceTree = "<group>"; };
+		BAD74AA5182B4A0800EBD407 /* MacViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MacViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +138,15 @@
 				BAD74A73182B14EB00EBD407 /* MDF1ViewController.m */,
 				BAD74A78182B14EB00EBD407 /* MDF1ViewController.xib */,
 				BAD74A61182B14EB00EBD407 /* Supporting Files */,
+				BAD74A98182B431200EBD407 /* iPhoneView.xib */,
+				BAD74A9A182B434700EBD407 /* iPhoneViewController.h */,
+				BAD74A9B182B434700EBD407 /* iPhoneViewController.m */,
+				BAD74A9D182B490100EBD407 /* iPadView.xib */,
+				BAD74A9F182B492A00EBD407 /* iPadViewController.h */,
+				BAD74AA0182B492A00EBD407 /* iPadViewController.m */,
+				BAD74AA2182B49F400EBD407 /* MacView.xib */,
+				BAD74AA4182B4A0800EBD407 /* MacViewController.h */,
+				BAD74AA5182B4A0800EBD407 /* MacViewController.m */,
 			);
 			path = MDF1Project2;
 			sourceTree = "<group>";
@@ -237,6 +261,9 @@
 				BAD74A6F182B14EB00EBD407 /* Default@2x.png in Resources */,
 				BAD74A71182B14EB00EBD407 /* Default-568h@2x.png in Resources */,
 				BAD74A7A182B14EB00EBD407 /* MDF1ViewController.xib in Resources */,
+				BAD74A99182B431200EBD407 /* iPhoneView.xib in Resources */,
+				BAD74A9E182B490100EBD407 /* iPadView.xib in Resources */,
+				BAD74AA3182B49F400EBD407 /* MacView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +301,9 @@
 				BAD74A67182B14EB00EBD407 /* main.m in Sources */,
 				BAD74A6B182B14EB00EBD407 /* MDF1AppDelegate.m in Sources */,
 				BAD74A74182B14EB00EBD407 /* MDF1ViewController.m in Sources */,
+				BAD74A9C182B434700EBD407 /* iPhoneViewController.m in Sources */,
+				BAD74AA1182B492A00EBD407 /* iPadViewController.m in Sources */,
+				BAD74AA6182B4A0800EBD407 /* MacViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
