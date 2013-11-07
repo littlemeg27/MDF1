@@ -7,6 +7,7 @@
 //
 
 #import "iPadViewController.h"
+#import "MacViewController.h"
 
 
 @interface iPadViewController ()
@@ -45,11 +46,11 @@
 
 -(IBAction)onClick:(id)sender
 {
-    MacViewController *MacView = [[iPadViewController alloc] initWithNibName:@"iPadView" bundle:nil];
+    MacViewController *MacView = [[MacViewController alloc] initWithNibName:@"MacView" bundle:nil];
     
-    if(iPadView !=nil)
+    if(MacView !=nil)
     {
-        [self.navigationController pushViewController:iPadView animated:TRUE]; //Makes the move to the iphone view
+        [self.navigationController pushViewController:MacView animated:TRUE]; //Makes the move to the iphone view
     }
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import "iPhoneViewController.h"
+#import "iPadViewController.h"
 
 @interface iPhoneViewController ()
 

@@ -7,8 +7,10 @@
 //
 
 #import "MDF1AppDelegate.h"
-
 #import "MDF1ViewController.h"
+#import "iPhoneViewController.h"
+#import "iPadViewController.h"
+#import "MacViewController.h"
 
 @implementation MDF1AppDelegate
 
@@ -17,11 +19,18 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
-    MDF1ViewController *viewController = [[MDF1ViewController alloc] initWithNibName:@"MDF1ViewController" bundle:nil]; //This is the child view
+    MDF1ViewController *viewController = [[MDF1ViewController alloc] initWithNibName:@"MDF1ViewController" bundle:nil]; //This is the child view 
+    iPhoneViewController *iPhoneController = [[iPhoneViewController alloc] initWithNibName:@"iPhoneViewController" bundle:nil]; //This is the iphone view
+    iPadViewController *iPadController = [[iPadViewController alloc] initWithNibName:@"iPadViewController" bundle:nil]; //This is the ipad view
+    MacViewController *macController = [[MacViewController alloc] initWithNibName:@"MacViewController" bundle:nil]; //This is the iphone view
     
-    UINavigationController *theNavController = [[UINavigationController alloc] initWithRootViewController: viewController]; //This is the nav controller
+    UINavigationController *theNavController = [[UINavigationController alloc] initWithRootViewController: viewController]; //This is the nav controller the home page
+    UINavigationController *theNavControllerOne = [[UINavigationController alloc] initWithRootViewController: iPhoneController]; //This is the nav controller for the iphone page
+    UINavigationController *theNavControllerTwo = [[UINavigationController alloc] initWithRootViewController: iPadController]; //This is the nav controller ipad page
+    UINavigationController *theNavControllerThree = [[UINavigationController alloc] initWithRootViewController: macController]; //This is the nav controller mac page
+    //UINavigationController *theNavControllerFour = [[theNavControllerFour alloc] initWithRootViewController: viewControllerFour]; //This is the nav controller
 
-    self.window.rootViewController = theNavController;
+    self.window.rootViewController = theNavController, theNavControllerOne, theNavControllerTwo, theNavControllerThree;
     [self.window makeKeyAndVisible];
     return YES;
 }
