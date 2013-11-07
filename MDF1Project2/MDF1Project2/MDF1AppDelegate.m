@@ -11,6 +11,9 @@
 #import "iPhoneViewController.h"
 #import "iPadViewController.h"
 #import "MacViewController.h"
+#import "UITableTabViewController.h"
+#import "DetailViewController.h"
+#import "TabThreeViewController.h"
 
 @implementation MDF1AppDelegate
 
@@ -22,15 +25,23 @@
     MDF1ViewController *viewController = [[MDF1ViewController alloc] initWithNibName:@"MDF1ViewController" bundle:nil]; //This is the child view 
     iPhoneViewController *iPhoneController = [[iPhoneViewController alloc] initWithNibName:@"iPhoneViewController" bundle:nil]; //This is the iphone view
     iPadViewController *iPadController = [[iPadViewController alloc] initWithNibName:@"iPadViewController" bundle:nil]; //This is the ipad view
-    MacViewController *macController = [[MacViewController alloc] initWithNibName:@"MacViewController" bundle:nil]; //This is the iphone view
+    MacViewController *macController = [[MacViewController alloc] initWithNibName:@"MacViewController" bundle:nil]; //This is the mac view
+    UITableTabViewController *tableController = [[UITableTabViewController alloc] initWithNibName:@"UITableTabViewController" bundle:nil]; //This is the UI table view
+    DetailViewController *detailController = [[DetailViewController alloc] initWithNibName:@"DetailViewController" bundle:nil]; //This is the detail view
+    TabThreeViewController *tabThreeController = [[TabThreeViewController alloc] initWithNibName:@"TabThreeViewController" bundle:nil]; //This is the third tab view
+    
+    self.tabBarController = [[UITabBarController alloc] init]; //Thing for the tabs
     
     UINavigationController *theNavController = [[UINavigationController alloc] initWithRootViewController: viewController]; //This is the nav controller the home page
     UINavigationController *theNavControllerOne = [[UINavigationController alloc] initWithRootViewController: iPhoneController]; //This is the nav controller for the iphone page
     UINavigationController *theNavControllerTwo = [[UINavigationController alloc] initWithRootViewController: iPadController]; //This is the nav controller ipad page
     UINavigationController *theNavControllerThree = [[UINavigationController alloc] initWithRootViewController: macController]; //This is the nav controller mac page
-    //UINavigationController *theNavControllerFour = [[theNavControllerFour alloc] initWithRootViewController: viewControllerFour]; //This is the nav controller
-
-    self.window.rootViewController = theNavController;
+    UINavigationController *theNavControllerFour = [[UINavigationController alloc] initWithRootViewController: tableController]; //This is the nav controller for the table view
+    UINavigationController *theNavControllerFive = [[UINavigationController alloc] initWithRootViewController: detailController]; //This is the nav controller for the detail view
+    UINavigationController *theNavControllerSix = [[UINavigationController alloc] initWithRootViewController: tabThreeController]; //This is the nav controller for the third tab view
+    
+    self.tabBarController.viewControllers = [NSArray arrayWithObjects: theNavController, theNavControllerFour, theNavControllerSix, nil];
+    self.window.rootViewController = self.tabBarController, theNavController;
     [self.window makeKeyAndVisible];
     return YES;
 }
