@@ -14,6 +14,4 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) MDF1ViewController *viewController;
-
 @end

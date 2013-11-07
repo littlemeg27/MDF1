@@ -16,12 +16,12 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[MDF1ViewController alloc] initWithNibName:@"MDF1ViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[MDF1ViewController alloc] initWithNibName:@"MDF1ViewController_iPad" bundle:nil];
-    }
-    self.window.rootViewController = self.viewController;
+    
+    MDF1ViewController *viewController = [[MDF1ViewController alloc] initWithNibName:@"MDF1ViewController" bundle:nil]; //This is the child view
+    
+    UINavigationController *theNavController = [[UINavigationController alloc] initWithRootViewController: viewController]; //This is the nav controller
+
+    self.window.rootViewController = theNavController;
     [self.window makeKeyAndVisible];
     return YES;
 }

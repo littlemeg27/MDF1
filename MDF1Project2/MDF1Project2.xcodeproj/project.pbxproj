@@ -17,8 +17,7 @@
 		BAD74A6F182B14EB00EBD407 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD74A6E182B14EB00EBD407 /* Default@2x.png */; };
 		BAD74A71182B14EB00EBD407 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BAD74A70182B14EB00EBD407 /* Default-568h@2x.png */; };
 		BAD74A74182B14EB00EBD407 /* MDF1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD74A73182B14EB00EBD407 /* MDF1ViewController.m */; };
-		BAD74A77182B14EB00EBD407 /* MDF1ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD74A75182B14EB00EBD407 /* MDF1ViewController_iPhone.xib */; };
-		BAD74A7A182B14EB00EBD407 /* MDF1ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD74A78182B14EB00EBD407 /* MDF1ViewController_iPad.xib */; };
+		BAD74A7A182B14EB00EBD407 /* MDF1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BAD74A78182B14EB00EBD407 /* MDF1ViewController.xib */; };
 		BAD74A82182B14EB00EBD407 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD74A81182B14EB00EBD407 /* SenTestingKit.framework */; };
 		BAD74A83182B14EB00EBD407 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD74A5A182B14EB00EBD407 /* UIKit.framework */; };
 		BAD74A84182B14EB00EBD407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD74A5C182B14EB00EBD407 /* Foundation.framework */; };
@@ -52,8 +51,7 @@
 		BAD74A70182B14EB00EBD407 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BAD74A72182B14EB00EBD407 /* MDF1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDF1ViewController.h; sourceTree = "<group>"; };
 		BAD74A73182B14EB00EBD407 /* MDF1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF1ViewController.m; sourceTree = "<group>"; };
-		BAD74A76182B14EB00EBD407 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDF1ViewController_iPhone.xib; sourceTree = "<group>"; };
-		BAD74A79182B14EB00EBD407 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDF1ViewController_iPad.xib; sourceTree = "<group>"; };
+		BAD74A79182B14EB00EBD407 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDF1ViewController.xib; sourceTree = "<group>"; };
 		BAD74A80182B14EB00EBD407 /* MDF1Project2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDF1Project2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD74A81182B14EB00EBD407 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BAD74A89182B14EB00EBD407 /* MDF1Project2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MDF1Project2Tests-Info.plist"; sourceTree = "<group>"; };
@@ -123,8 +121,7 @@
 				BAD74A6A182B14EB00EBD407 /* MDF1AppDelegate.m */,
 				BAD74A72182B14EB00EBD407 /* MDF1ViewController.h */,
 				BAD74A73182B14EB00EBD407 /* MDF1ViewController.m */,
-				BAD74A75182B14EB00EBD407 /* MDF1ViewController_iPhone.xib */,
-				BAD74A78182B14EB00EBD407 /* MDF1ViewController_iPad.xib */,
+				BAD74A78182B14EB00EBD407 /* MDF1ViewController.xib */,
 				BAD74A61182B14EB00EBD407 /* Supporting Files */,
 			);
 			path = MDF1Project2;
@@ -239,8 +236,7 @@
 				BAD74A6D182B14EB00EBD407 /* Default.png in Resources */,
 				BAD74A6F182B14EB00EBD407 /* Default@2x.png in Resources */,
 				BAD74A71182B14EB00EBD407 /* Default-568h@2x.png in Resources */,
-				BAD74A77182B14EB00EBD407 /* MDF1ViewController_iPhone.xib in Resources */,
-				BAD74A7A182B14EB00EBD407 /* MDF1ViewController_iPad.xib in Resources */,
+				BAD74A7A182B14EB00EBD407 /* MDF1ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,20 +304,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		BAD74A75182B14EB00EBD407 /* MDF1ViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BAD74A76182B14EB00EBD407 /* en */,
-			);
-			name = MDF1ViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
-		BAD74A78182B14EB00EBD407 /* MDF1ViewController_iPad.xib */ = {
+		BAD74A78182B14EB00EBD407 /* MDF1ViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BAD74A79182B14EB00EBD407 /* en */,
 			);
-			name = MDF1ViewController_iPad.xib;
+			name = MDF1ViewController.xib;
 			sourceTree = "<group>";
 		};
 		BAD74A8A182B14EB00EBD407 /* InfoPlist.strings */ = {

@@ -26,4 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    self.title = @"MDF1 App"; //Title of the app
+    self.navigationController.navigationBar.tintColor = [UIColor redColor];
+    [super viewWillAppear:animated];
+}
+
 @end
