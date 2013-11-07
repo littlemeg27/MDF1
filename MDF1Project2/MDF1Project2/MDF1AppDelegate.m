@@ -30,7 +30,7 @@
     UINavigationController *theNavControllerThree = [[UINavigationController alloc] initWithRootViewController: macController]; //This is the nav controller mac page
     //UINavigationController *theNavControllerFour = [[theNavControllerFour alloc] initWithRootViewController: viewControllerFour]; //This is the nav controller
 
-    self.window.rootViewController = theNavController, theNavControllerOne, theNavControllerTwo, theNavControllerThree;
+    self.window.rootViewController = theNavController;
     [self.window makeKeyAndVisible];
     return YES;
 }
