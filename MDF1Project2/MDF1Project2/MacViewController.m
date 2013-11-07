@@ -41,6 +41,11 @@
     [super viewWillAppear:animated];
 }
 
+-(IBAction)backButton:(id)sender //Go back a page button
+{
+    [self.navigationController popViewControllerAnimated:TRUE];
+}
+
 
 
 @end

@@ -44,7 +44,7 @@
     [super viewWillAppear:animated];
 }
 
--(IBAction)onClick:(id)sender
+-(IBAction)onClick:(id)sender //Go to the mac page
 {
     MacViewController *MacView = [[MacViewController alloc] initWithNibName:@"MacView" bundle:nil];
     
@@ -53,6 +53,12 @@
         [self.navigationController pushViewController:MacView animated:TRUE]; //Makes the move to the iphone view
     }
 }
+
+-(IBAction)backButton:(id)sender //Go back a page button
+{
+    [self.navigationController popViewControllerAnimated:TRUE];
+}
+
 
 
 @end
