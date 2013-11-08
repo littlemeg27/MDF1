@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController
+@interface DetailViewViewController : UIViewController
+{
+    IBOutlet UILabel* nameLabel;
+    IBOutlet UILabel* linkLabel;
+    IBOutlet UIButton* backButton;
+}
+
+@property(nonatomic, copy) NSString* name;
+@property(nonatomic, copy) NSString* linkName;
+
+-(void)updateUILabel;
+-(IBAction)backButton:(id)sender;
 
 @end
