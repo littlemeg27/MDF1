@@ -11,7 +11,6 @@
 @implementation CustomTableCell
 
 @synthesize nameLabel;
-@synthesize linkLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

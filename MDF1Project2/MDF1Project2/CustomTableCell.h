@@ -11,9 +11,8 @@
 @interface CustomTableCell : UITableViewCell
 {
     IBOutlet UILabel *nameLabel;
-    IBOutlet UILabel *linkLabel;
 }
 
 @property (nonatomic, strong) UILabel* nameLabel;
-@property (nonatomic, strong) UILabel* linkLabel;
+
 @end

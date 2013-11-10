@@ -87,8 +87,6 @@
                 cellRow = (CustomTableCell*)view;
                 
                 cellRow.nameLabel.text = [stringArray1 objectAtIndex:indexPath.row];
-                
-                cellRow.linkLabel.text = [stringArray2 objectAtIndex:indexPath.row];
             }
         }
     }
