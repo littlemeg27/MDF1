@@ -12,8 +12,8 @@
 		BABEF3E0182BDCB900C36DDE /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABEF3DF182BDCB900C36DDE /* DetailView.xib */; };
 		BABEF3E3182BDCCD00C36DDE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BABEF3E2182BDCCD00C36DDE /* DetailViewController.m */; };
 		BABEF3E8182BDDBB00C36DDE /* TabThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BABEF3E7182BDDBB00C36DDE /* TabThreeViewController.m */; };
-		BABEF3EA182C86AF00C36DDE /* UITableTabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABEF3E9182C86AF00C36DDE /* UITableTabView.xib */; };
-		BABEF3EC182C874000C36DDE /* TabThreeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABEF3EB182C874000C36DDE /* TabThreeView.xib */; };
+		BABEF3EA182C86AF00C36DDE /* UITableTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABEF3E9182C86AF00C36DDE /* UITableTabViewController.xib */; };
+		BABEF3EC182C874000C36DDE /* TabThreeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BABEF3EB182C874000C36DDE /* TabThreeViewController.xib */; };
 		BAD74A5B182B14EB00EBD407 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD74A5A182B14EB00EBD407 /* UIKit.framework */; };
 		BAD74A5D182B14EB00EBD407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD74A5C182B14EB00EBD407 /* Foundation.framework */; };
 		BAD74A5F182B14EB00EBD407 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD74A5E182B14EB00EBD407 /* CoreGraphics.framework */; };
@@ -58,8 +58,8 @@
 		BABEF3E2182BDCCD00C36DDE /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		BABEF3E6182BDDBB00C36DDE /* TabThreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabThreeViewController.h; sourceTree = "<group>"; };
 		BABEF3E7182BDDBB00C36DDE /* TabThreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabThreeViewController.m; sourceTree = "<group>"; };
-		BABEF3E9182C86AF00C36DDE /* UITableTabView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITableTabView.xib; sourceTree = "<group>"; };
-		BABEF3EB182C874000C36DDE /* TabThreeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabThreeView.xib; sourceTree = "<group>"; };
+		BABEF3E9182C86AF00C36DDE /* UITableTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UITableTabViewController.xib; sourceTree = "<group>"; };
+		BABEF3EB182C874000C36DDE /* TabThreeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabThreeViewController.xib; sourceTree = "<group>"; };
 		BAD74A57182B14EB00EBD407 /* MDF1Project2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1Project2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD74A5A182B14EB00EBD407 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BAD74A5C182B14EB00EBD407 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -167,13 +167,13 @@
 				BAD74AA2182B49F400EBD407 /* MacView.xib */,
 				BAD74AA4182B4A0800EBD407 /* MacViewController.h */,
 				BAD74AA5182B4A0800EBD407 /* MacViewController.m */,
-				BABEF3E9182C86AF00C36DDE /* UITableTabView.xib */,
+				BABEF3E9182C86AF00C36DDE /* UITableTabViewController.xib */,
 				BABEF3DC182BDC4200C36DDE /* UITableTabViewController.h */,
 				BABEF3DD182BDC4200C36DDE /* UITableTabViewController.m */,
 				BABEF3DF182BDCB900C36DDE /* DetailView.xib */,
 				BABEF3E1182BDCCD00C36DDE /* DetailViewController.h */,
 				BABEF3E2182BDCCD00C36DDE /* DetailViewController.m */,
-				BABEF3EB182C874000C36DDE /* TabThreeView.xib */,
+				BABEF3EB182C874000C36DDE /* TabThreeViewController.xib */,
 				BABEF3E6182BDDBB00C36DDE /* TabThreeViewController.h */,
 				BABEF3E7182BDDBB00C36DDE /* TabThreeViewController.m */,
 				BA2A50D5182C9D0900AFCA7C /* CustomCellView.xib */,
@@ -297,8 +297,8 @@
 				BAD74A9E182B490100EBD407 /* iPadView.xib in Resources */,
 				BAD74AA3182B49F400EBD407 /* MacView.xib in Resources */,
 				BABEF3E0182BDCB900C36DDE /* DetailView.xib in Resources */,
-				BABEF3EA182C86AF00C36DDE /* UITableTabView.xib in Resources */,
-				BABEF3EC182C874000C36DDE /* TabThreeView.xib in Resources */,
+				BABEF3EA182C86AF00C36DDE /* UITableTabViewController.xib in Resources */,
+				BABEF3EC182C874000C36DDE /* TabThreeViewController.xib in Resources */,
 				BA2A50D6182C9D0900AFCA7C /* CustomCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
