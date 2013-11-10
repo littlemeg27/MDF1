@@ -8,7 +8,6 @@
 
 #import "UITableTabViewController.h"
 #import "DetailViewController.h"
-#import "CustomTableCell.h"
 
 @interface UITableTabViewController ()
 
@@ -73,23 +72,15 @@
 {
     static NSString  *cellIdentity = @"Cell";
     
-    CustomTableCell *cellRow  = [tableView dequeueReusableCellWithIdentifier: cellIdentity];
+    UITableViewCell *cellRow  = [tableView dequeueReusableCellWithIdentifier: cellIdentity];
     
     
     if(cellRow == nil)
     {
-        NSArray* views = [[NSBundle mainBundle] loadNibNamed:@"CustomCellView" owner:nil options:nil];
-        
-        for(UIView *view in views)
-        {
-            if([view isKindOfClass:[CustomTableCell class]])
-            {
-                cellRow = (CustomTableCell*)view;
-                
-                cellRow.nameLabel.text = [stringArray1 objectAtIndex:indexPath.row];
-            }
-        }
+        cellRow = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: cellIdentity];
     }
+    
+    cellRow.textLabel.text = [stringArray1 objectAtIndex:indexPath.row]; //Show the name on the table
     
     return cellRow;
 }
