@@ -32,6 +32,7 @@
 		BAA8BBDC1833EAA00057E001 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BAA8BBDA1833EAA00057E001 /* InfoPlist.strings */; };
 		BAA8BBDF1833EAA00057E001 /* MDF1Project3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8BBDE1833EAA00057E001 /* MDF1Project3Tests.m */; };
 		BAA8BBEA1833EE910057E001 /* ApplicationState.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8BBE91833EE910057E001 /* ApplicationState.m */; };
+		BAA8BBED183449040057E001 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8BBEC183449030057E001 /* CustomObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,8 @@
 		BAA8BBDE1833EAA00057E001 /* MDF1Project3Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF1Project3Tests.m; sourceTree = "<group>"; };
 		BAA8BBE81833EE910057E001 /* ApplicationState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationState.h; sourceTree = "<group>"; };
 		BAA8BBE91833EE910057E001 /* ApplicationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationState.m; sourceTree = "<group>"; };
+		BAA8BBEB183449030057E001 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
+		BAA8BBEC183449030057E001 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +157,8 @@
 				BAA8BBA01833EAA00057E001 /* Supporting Files */,
 				BAA8BBE81833EE910057E001 /* ApplicationState.h */,
 				BAA8BBE91833EE910057E001 /* ApplicationState.m */,
+				BAA8BBEB183449030057E001 /* CustomObject.h */,
+				BAA8BBEC183449030057E001 /* CustomObject.m */,
 			);
 			path = MDF1Project3;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				BAA8BBB31833EAA00057E001 /* MDF1FirstViewController.m in Sources */,
 				BAA8BBBA1833EAA00057E001 /* MDF1SecondViewController.m in Sources */,
 				BAA8BBEA1833EE910057E001 /* ApplicationState.m in Sources */,
+				BAA8BBED183449040057E001 /* CustomObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

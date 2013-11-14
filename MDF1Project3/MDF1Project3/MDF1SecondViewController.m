@@ -7,6 +7,7 @@
 //
 
 #import "MDF1SecondViewController.h"
+#import "ApplicationState.h"
 
 @interface MDF1SecondViewController ()
 

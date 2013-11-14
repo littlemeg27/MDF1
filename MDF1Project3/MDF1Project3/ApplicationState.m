@@ -10,6 +10,8 @@
 
 @implementation ApplicationState
 
+@synthesize something;
+
 static ApplicationState  *_sharedApplicationState = nil;
 
 +(ApplicationState*)sharedApplicationState //We are creating the singleton for the application
@@ -46,6 +48,7 @@ static ApplicationState  *_sharedApplicationState = nil;
     if((self = [super init]))
     {
         //Things we need to save for the singleton go in here
+        something = 0; 
     }
     
     return self;

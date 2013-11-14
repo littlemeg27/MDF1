@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface ApplicationState : NSObject
+{
+    NSInteger something;
+}
 
++(ApplicationState*)sharedApplicationState;
+
+@property (nonatomic, assign)NSInteger something;
 @end

@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDF1FirstViewController : UIViewController
+@interface MDF1FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+{
+    IBOutlet UITableView *tableView;
+    
+    UIAlertView *editAlert;
+    BOOL editMode;
+    
+    IBOutlet UIButton *editButton;
+}
+
+-(void)alertView:(UIAlertView *)alertView;
 
 @end
