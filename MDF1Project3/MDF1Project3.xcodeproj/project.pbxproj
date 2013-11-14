@@ -33,6 +33,7 @@
 		BAA8BBDF1833EAA00057E001 /* MDF1Project3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8BBDE1833EAA00057E001 /* MDF1Project3Tests.m */; };
 		BAA8BBEA1833EE910057E001 /* ApplicationState.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8BBE91833EE910057E001 /* ApplicationState.m */; };
 		BAA8BBED183449040057E001 /* CustomObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA8BBEC183449030057E001 /* CustomObject.m */; };
+		BAA8BBEF183499420057E001 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA8BBEE183499420057E001 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		BAA8BBE91833EE910057E001 /* ApplicationState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationState.m; sourceTree = "<group>"; };
 		BAA8BBEB183449030057E001 /* CustomObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomObject.h; sourceTree = "<group>"; };
 		BAA8BBEC183449030057E001 /* CustomObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomObject.m; sourceTree = "<group>"; };
+		BAA8BBEE183499420057E001 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAA8BBEF183499420057E001 /* MapKit.framework in Frameworks */,
 				BAA8BB9A1833EAA00057E001 /* UIKit.framework in Frameworks */,
 				BAA8BB9C1833EAA00057E001 /* Foundation.framework in Frameworks */,
 				BAA8BB9E1833EAA00057E001 /* CoreGraphics.framework in Frameworks */,
@@ -110,6 +113,7 @@
 		BAA8BB8D1833EAA00057E001 = {
 			isa = PBXGroup;
 			children = (
+				BAA8BBEE183499420057E001 /* MapKit.framework */,
 				BAA8BB9F1833EAA00057E001 /* MDF1Project3 */,
 				BAA8BBD71833EAA00057E001 /* MDF1Project3Tests */,
 				BAA8BB981833EAA00057E001 /* Frameworks */,
