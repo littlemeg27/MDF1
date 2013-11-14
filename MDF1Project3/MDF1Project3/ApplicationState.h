@@ -16,4 +16,5 @@
 +(ApplicationState*)sharedApplicationState;
 
 @property (nonatomic, assign)NSInteger something;
+
 @end

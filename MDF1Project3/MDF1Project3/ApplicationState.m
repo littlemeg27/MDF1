@@ -7,6 +7,7 @@
 //
 
 #import "ApplicationState.h"
+#import "CustomObject.h"
 
 @implementation ApplicationState
 
@@ -48,6 +49,8 @@ static ApplicationState  *_sharedApplicationState = nil;
     if((self = [super init]))
     {
         //Things we need to save for the singleton go in here
+        
+        CustomObject *business1 = [[CustomObject alloc] initWithNameName:@"Best Buy Pineville" description:@"Electronics store, first Best Buy in the area" longitude:<#(NSInteger *)#> latitude:<#(NSInteger *)#>]
         something = 0; 
     }
     
