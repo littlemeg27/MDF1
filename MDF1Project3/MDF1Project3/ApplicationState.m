@@ -49,9 +49,7 @@ static ApplicationState  *_sharedApplicationState = nil;
     if((self = [super init]))
     {
         //Things we need to save for the singleton go in here
-        
-       /* CustomObject *business1 = [[CustomObject alloc] initWithNameName:@"Best Buy Pineville" description:@"Electronics store, first Best Buy in the area" longitude:<#(NSInteger *)#> latitude:<#(NSInteger *)#>];*/
-        //Maybe this part above need to be in first view controller i think
+        businessArray = [[NSMutableArray alloc] initWithObjects: business1, business2, business3, business4, business5, business6, business7, business8, business9, business10, nil];
         something = 0; 
     }
     

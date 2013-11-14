@@ -11,6 +11,7 @@
 @interface ApplicationState : NSObject
 {
     NSInteger something;
+    NSMutableArray *businessArray;
 }
 
 +(ApplicationState*)sharedApplicationState;
