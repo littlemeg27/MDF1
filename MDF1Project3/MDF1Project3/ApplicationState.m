@@ -50,7 +50,8 @@ static ApplicationState  *_sharedApplicationState = nil;
     {
         //Things we need to save for the singleton go in here
         
-        CustomObject *business1 = [[CustomObject alloc] initWithNameName:@"Best Buy Pineville" description:@"Electronics store, first Best Buy in the area" longitude:<#(NSInteger *)#> latitude:<#(NSInteger *)#>]
+       /* CustomObject *business1 = [[CustomObject alloc] initWithNameName:@"Best Buy Pineville" description:@"Electronics store, first Best Buy in the area" longitude:<#(NSInteger *)#> latitude:<#(NSInteger *)#>];*/
+        //Maybe this part above need to be in first view controller i think
         something = 0; 
     }
     
