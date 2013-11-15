@@ -46,7 +46,7 @@
     //self.mapView. = self;
     
     ApplicationState *theAppState = [ApplicationState sharedApplicationState];
-    theAppState.businessArray; //Cant figure out the right way to call the array
+    [[[ApplicationState GetInstance]businessArray]objectAtIndex:1]; //Cant figure out the right way to call the array
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
