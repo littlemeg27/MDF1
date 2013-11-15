@@ -10,12 +10,9 @@
 
 @interface ApplicationState : NSObject
 {
-    NSInteger something;
     NSMutableArray *businessArray;
 }
 
 +(ApplicationState*)sharedApplicationState;
-
-@property (nonatomic, assign)NSInteger something;
 
 @end

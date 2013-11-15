@@ -12,14 +12,14 @@
 
 @synthesize nameOfBusiness, descriptionOfBusiness, longitudeOfBusiness, latitudeOfBusiness;
 
--(id)initWithNameName:(NSString*)name description:(NSString*)description longitude:(NSInteger*)longitude latitude:(NSInteger*)latitude
+-(id)initWithNameName:(NSString*)name description:(NSString*)description longitude:(NSInteger)longitude latitude:(NSInteger)latitude
 {
     if((self = [super init]))
     {
         nameOfBusiness = [name copy];
         descriptionOfBusiness = [description copy];
-        longitudeOfBusiness = longitude;
-        latitudeOfBusiness = latitude;
+        longitudeOfBusiness = &longitude;
+        latitudeOfBusiness = &latitude;
     }
     return self;
 }

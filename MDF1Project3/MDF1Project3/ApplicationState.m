@@ -11,8 +11,6 @@
 
 @implementation ApplicationState
 
-@synthesize something;
-
 static ApplicationState  *_sharedApplicationState = nil;
 
 +(ApplicationState*)sharedApplicationState //We are creating the singleton for the application
@@ -49,8 +47,19 @@ static ApplicationState  *_sharedApplicationState = nil;
     if((self = [super init]))
     {
         //Things we need to save for the singleton go in here
-        //businessArray = [[NSMutableArray alloc] initWithObjects: business1, business2, business3, business4, business5, business6, business7, business8, business9, business10, nil];
-        something = 0; 
+        
+        CustomObject *business1 = [[CustomObject alloc] initWithNameName:@"Best Buy Pineville" description:@"Electronics store" longitude:-80.892296 latitude:35.083201];
+        CustomObject *business2 = [[CustomObject alloc] initWithNameName:@"Pat-a-cakes Bakery" description:@"Speciality Cupcake Bakery" longitude:-81.042837 latitude:34.951758];
+        CustomObject *business3 = [[CustomObject alloc] initWithNameName:@"BreadSmith" description:@"Bread Bakery" longitude:-80.978080 latitude:35.037729];
+        CustomObject *business4 = [[CustomObject alloc] initWithNameName:@"Carowinds" description:@"Amusement Park" longitude:-80.943768 latitude:35.103234];
+        CustomObject *business5 = [[CustomObject alloc] initWithNameName:@"Concord Mills" description:@"Mile round mall" longitude:-80.721188 latitude:35.368479];
+        CustomObject *business6 = [[CustomObject alloc] initWithNameName:@"South Park" description:@"High-end Mall" longitude:-80.831755 latitude:35.153939];
+        CustomObject *business7 = [[CustomObject alloc] initWithNameName:@"Nothing But Noodles" description:@"Epic Noodle Place" longitude:-80.813800 latitude:35.059113];
+        CustomObject *business8 = [[CustomObject alloc] initWithNameName:@"Winthrop University" description:@"Local University" longitude:-81.028634 latitude:34.938513];
+        CustomObject *business9 = [[CustomObject alloc] initWithNameName:@"Orange Leaf" description:@"Frozen Yorgart" longitude:-81.042534 latitude: 34.958799];
+        CustomObject *business10 = [[CustomObject alloc] initWithNameName:@"Books-A-Million" description:@"Only Bookstore in Rock Hill" longitude:-80.979465 latitude:34.941647];
+        
+        businessArray = [[NSMutableArray alloc] initWithObjects: business1, business2, business3, business4, business5, business6, business7, business8, business9, business10, nil];
     }
     
     return self;

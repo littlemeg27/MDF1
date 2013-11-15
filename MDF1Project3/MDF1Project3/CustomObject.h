@@ -16,7 +16,7 @@
     NSInteger *latitudeOfBusiness;
 }
 
--(id)initWithNameName:(NSString*)name description:(NSString*)description longitude:(NSInteger*)longitude latitude:(NSInteger*)latitude;
+-(id)initWithNameName:(NSString*)name description:(NSString*)description longitude:(NSInteger)longitude latitude:(NSInteger)latitude;
 
 @property (nonatomic, strong)NSString *nameOfBusiness;
 @property (nonatomic, strong)NSString *descriptionOfBusiness;

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA57A8E01835BB2F002328F1 /* MyMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA57A8DF1835BB2F002328F1 /* MyMapAnnotation.m */; };
 		BAA8BB9A1833EAA00057E001 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA8BB991833EAA00057E001 /* UIKit.framework */; };
 		BAA8BB9C1833EAA00057E001 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA8BB9B1833EAA00057E001 /* Foundation.framework */; };
 		BAA8BB9E1833EAA00057E001 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAA8BB9D1833EAA00057E001 /* CoreGraphics.framework */; };
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA57A8DE1835BB2F002328F1 /* MyMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapAnnotation.h; sourceTree = "<group>"; };
+		BA57A8DF1835BB2F002328F1 /* MyMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapAnnotation.m; sourceTree = "<group>"; };
 		BAA8BB961833EAA00057E001 /* MDF1Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDF1Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAA8BB991833EAA00057E001 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BAA8BB9B1833EAA00057E001 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -113,7 +116,6 @@
 		BAA8BB8D1833EAA00057E001 = {
 			isa = PBXGroup;
 			children = (
-				BAA8BBEE183499420057E001 /* MapKit.framework */,
 				BAA8BB9F1833EAA00057E001 /* MDF1Project3 */,
 				BAA8BBD71833EAA00057E001 /* MDF1Project3Tests */,
 				BAA8BB981833EAA00057E001 /* Frameworks */,
@@ -133,6 +135,7 @@
 		BAA8BB981833EAA00057E001 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAA8BBEE183499420057E001 /* MapKit.framework */,
 				BAA8BB991833EAA00057E001 /* UIKit.framework */,
 				BAA8BB9B1833EAA00057E001 /* Foundation.framework */,
 				BAA8BB9D1833EAA00057E001 /* CoreGraphics.framework */,
@@ -163,6 +166,8 @@
 				BAA8BBE91833EE910057E001 /* ApplicationState.m */,
 				BAA8BBEB183449030057E001 /* CustomObject.h */,
 				BAA8BBEC183449030057E001 /* CustomObject.m */,
+				BA57A8DE1835BB2F002328F1 /* MyMapAnnotation.h */,
+				BA57A8DF1835BB2F002328F1 /* MyMapAnnotation.m */,
 			);
 			path = MDF1Project3;
 			sourceTree = "<group>";
@@ -324,6 +329,7 @@
 				BAA8BBBA1833EAA00057E001 /* MDF1SecondViewController.m in Sources */,
 				BAA8BBEA1833EE910057E001 /* ApplicationState.m in Sources */,
 				BAA8BBED183449040057E001 /* CustomObject.m in Sources */,
+				BA57A8E01835BB2F002328F1 /* MyMapAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +536,7 @@
 				BAA8BBE41833EAA00057E001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BAA8BBE51833EAA00057E001 /* Build configuration list for PBXNativeTarget "MDF1Project3Tests" */ = {
 			isa = XCConfigurationList;
@@ -538,6 +545,7 @@
 				BAA8BBE71833EAA00057E001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
