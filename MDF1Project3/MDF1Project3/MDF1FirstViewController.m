@@ -69,11 +69,13 @@
 }
 
 
-/*-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //Creates table view
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //Creates table view
 {
-    //return [stringArray1 count];
+    ApplicationState *theAppState = [ApplicationState sharedApplicationState];
+ 
+    return [theAppState.businessArray count];
             //Replace with object
-}*/
+}
 
 -(UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath //Adds values to each row
 {
@@ -88,7 +90,14 @@
     }
     
     ApplicationState *theAppState = [ApplicationState sharedApplicationState];
-    cellRow.textLabel.text = [theAppState.businessArray objectAtIndex:0];//Show the name on the table
+    
+    for (int i = 0; i <= 9; i++)
+    {
+        CustomObject *mapInfo = [theAppState.businessArray objectAtIndex:indexPath.row];
+        cellRow.textLabel.text = mapInfo.nameOfBusiness;
+    }
+
+    //[theAppState.businessArray objectAtIndex:1];//Show the name on the table
     //Insert use of object here
     
     return cellRow;
