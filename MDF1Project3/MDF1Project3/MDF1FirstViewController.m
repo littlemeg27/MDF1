@@ -71,9 +71,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //Creates table view
 {
-    ApplicationState *theAppState = [ApplicationState sharedApplicationState];
- 
-    return [theAppState.businessArray count];
+    return [[ApplicationState sharedApplicationState].businessArray count];
             //Replace with object
 }
 
@@ -88,17 +86,10 @@
     {
         cellRow = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: cellIdentity];
     }
+        
+        cellRow.textLabel.text =[[ApplicationState sharedApplicationState].businessArray objectAtIndex:indexPath.row];
     
-    ApplicationState *theAppState = [ApplicationState sharedApplicationState];
-    
-    for (int i = 0; i <= 9; i++)
-    {
-        CustomObject *mapInfo = [theAppState.businessArray objectAtIndex:indexPath.row];
-        cellRow.textLabel.text = mapInfo.nameOfBusiness;
-    }
-
-    //[theAppState.businessArray objectAtIndex:1];//Show the name on the table
-    //Insert use of object here
+    //cell.textLabel.text = [[DataContainerSingleto sharedDataContainerSingleto].arrayForSaved objectAtIndex:indexPath.row];
     
     return cellRow;
 }
