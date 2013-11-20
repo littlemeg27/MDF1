@@ -9,6 +9,8 @@
 #import "MDF1FirstViewController.h"
 #import "ApplicationState.h"
 #import "MDF1SecondViewController.h"
+#import "CustomObject.h"
+#import "MyMapAnnotation.h"
 
 @interface MDF1FirstViewController ()
 
@@ -67,11 +69,11 @@
 }
 
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //Creates table view
+/*-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //Creates table view
 {
     //return [stringArray1 count];
             //Replace with object
-}
+}*/
 
 -(UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath //Adds values to each row
 {
@@ -85,7 +87,8 @@
         cellRow = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: cellIdentity];
     }
     
-    //cellRow.textLabel.text = [stringArray1 objectAtIndex:indexPath.row]; //Show the name on the table
+    ApplicationState *theAppState = [ApplicationState sharedApplicationState];
+    cellRow.textLabel.text = [theAppState.businessArray objectAtIndex:0];//Show the name on the table
     //Insert use of object here
     
     return cellRow;

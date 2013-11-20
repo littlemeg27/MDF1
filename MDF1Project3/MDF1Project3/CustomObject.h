@@ -12,15 +12,15 @@
 {
     NSString *nameOfBusiness;
     NSString *descriptionOfBusiness;
-    NSInteger *longitudeOfBusiness;
-    NSInteger *latitudeOfBusiness;
+    float longitudeOfBusiness;
+    float latitudeOfBusiness;
 }
 
--(id)initWithNameName:(NSString*)name description:(NSString*)description longitude:(NSInteger)longitude latitude:(NSInteger)latitude;
+-(id)initWithNameName:(NSString*)name description:(NSString*)description longitude:(float)longitude latitude:(float)latitude;
 
 @property (nonatomic, strong)NSString *nameOfBusiness;
 @property (nonatomic, strong)NSString *descriptionOfBusiness;
-@property (nonatomic, assign)NSInteger *longitudeOfBusiness;
-@property (nonatomic, assign)NSInteger *latitudeOfBusiness;
+@property (nonatomic, assign)float longitudeOfBusiness;
+@property (nonatomic, assign)float latitudeOfBusiness;
 
 @end

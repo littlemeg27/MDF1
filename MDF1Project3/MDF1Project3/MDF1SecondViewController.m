@@ -31,8 +31,8 @@
 - (void)viewDidLoad
 {
     MKCoordinateSpan span; //The zoom level of the map
-    span.latitudeDelta = 5.0;
-    span.longitudeDelta = 5.0;
+    span.latitudeDelta = 1.0;
+    span.longitudeDelta = 1.0;
     
     CLLocationCoordinate2D location; //The location of the map
     location.latitude = 35.227087;
@@ -43,13 +43,27 @@
     region.span = span;
     mapView.region = region;
     
-    //self.mapView. = self;
-    
-    ApplicationState *theAppState = [ApplicationState sharedApplicationState];
-    CustomObject *mapInfo = [businessArray objectAtIndex:3]; //Not seeing business array
-    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void) viewDidAppear:(BOOL)animated
+{
+    
+    ApplicationState *theAppState = [ApplicationState sharedApplicationState];
+    
+    for (int i = 0; i <= 9; i++)
+    {
+    CustomObject *mapInfo = [theAppState.businessArray objectAtIndex:i];
+        MyMapAnnotation *anno = [[MyMapAnnotation alloc]initWithTitle:mapInfo.nameOfBusiness coord:CLLocationCoordinate2DMake(mapInfo.latitudeOfBusiness, mapInfo.longitudeOfBusiness)];
+    
+        if(theAppState != nil)
+        {
+            [mapView addAnnotation:anno];
+        }
+    }
+
+    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning

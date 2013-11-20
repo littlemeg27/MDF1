@@ -13,6 +13,8 @@
     NSMutableArray *businessArray;
 }
 
+@property (strong)NSMutableArray *businessArray;
+
 +(ApplicationState*)sharedApplicationState;
 
 @end
