@@ -11,7 +11,6 @@
 @interface MDF1FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 {
     IBOutlet UITableView *tableView;
-    
     UIAlertView *editAlert;
     BOOL editMode;
     

@@ -31,6 +31,8 @@
 		BA327BF1183E5DE4005C4FA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA327BB8183E5DE4005C4FA9 /* Foundation.framework */; };
 		BA327BF9183E5DE4005C4FA9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA327BF7183E5DE4005C4FA9 /* InfoPlist.strings */; };
 		BA327BFC183E5DE4005C4FA9 /* MDF1Project4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA327BFB183E5DE4005C4FA9 /* MDF1Project4Tests.m */; };
+		BA327C06183E61F9005C4FA9 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA327C05183E61F9005C4FA9 /* DetailView.xib */; };
+		BA327C09183E622A005C4FA9 /* DetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = BA327C08183E622A005C4FA9 /* DetailView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,9 @@
 		BA327BF8183E5DE4005C4FA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA327BFA183E5DE4005C4FA9 /* MDF1Project4Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MDF1Project4Tests.h; sourceTree = "<group>"; };
 		BA327BFB183E5DE4005C4FA9 /* MDF1Project4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF1Project4Tests.m; sourceTree = "<group>"; };
+		BA327C05183E61F9005C4FA9 /* DetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		BA327C07183E622A005C4FA9 /* DetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailView.h; sourceTree = "<group>"; };
+		BA327C08183E622A005C4FA9 /* DetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +154,9 @@
 				BA327BE2183E5DE4005C4FA9 /* MDF1SecondViewController_iPhone.xib */,
 				BA327BE5183E5DE4005C4FA9 /* MDF1SecondViewController_iPad.xib */,
 				BA327BBD183E5DE4005C4FA9 /* Supporting Files */,
+				BA327C05183E61F9005C4FA9 /* DetailView.xib */,
+				BA327C07183E622A005C4FA9 /* DetailView.h */,
+				BA327C08183E622A005C4FA9 /* DetailView.m */,
 			);
 			path = MDF1Project4;
 			sourceTree = "<group>";
@@ -270,6 +278,7 @@
 				BA327BE1183E5DE4005C4FA9 /* MDF1FirstViewController_iPad.xib in Resources */,
 				BA327BE4183E5DE4005C4FA9 /* MDF1SecondViewController_iPhone.xib in Resources */,
 				BA327BE7183E5DE4005C4FA9 /* MDF1SecondViewController_iPad.xib in Resources */,
+				BA327C06183E61F9005C4FA9 /* DetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +317,7 @@
 				BA327BC7183E5DE4005C4FA9 /* MDF1AppDelegate.m in Sources */,
 				BA327BD0183E5DE4005C4FA9 /* MDF1FirstViewController.m in Sources */,
 				BA327BD7183E5DE4005C4FA9 /* MDF1SecondViewController.m in Sources */,
+				BA327C09183E622A005C4FA9 /* DetailView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
