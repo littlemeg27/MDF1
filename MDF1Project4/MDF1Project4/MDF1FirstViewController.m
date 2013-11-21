@@ -35,7 +35,7 @@
     {
         connection = [[NSURLConnection alloc]initWithRequest:requestTheXML delegate:self];
         
-        requestTheData = [NSMutable data]; //This holds the data
+        requestTheData = [NSMutableData data]; //This holds the data
     }
 
     [super viewDidLoad];
@@ -52,7 +52,12 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection *)connection
 {
-    NSString *requestTheString = [[NSString alloc]initWithData:requestTheData encoding:NSASCIIStringEncoding];
+    NSString *requestTheString = [[NSString alloc]initWithData:requestTheData encoding:NSASCIIStringEncoding]; //This is how we are outputting
+    
+    if(requestTheString != nil)
+    {
+        NSLog(@"%@", requestTheString);
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -74,8 +79,8 @@
     {
         NSLog(@"I want to delete: %d", indexPath.row);
         
-        [stringArray1 removeObjectAtIndex:indexPath.row];
-        [stringArray2 removeObjectAtIndex:indexPath.row];
+        //[stringArray1 removeObjectAtIndex:indexPath.row];
+        //[stringArray2 removeObjectAtIndex:indexPath.row];
         
         [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:TRUE];
     }
@@ -84,7 +89,7 @@
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section //Creates table view
 {
-    return [stringArray1 count];
+    //return [stringArray1 count];
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView2 cellForRowAtIndexPath:(NSIndexPath *)indexPath //Adds values to each row
@@ -99,13 +104,13 @@
         cellRow = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: cellIdentity];
     }
     
-    cellRow.textLabel.text = [stringArray1 objectAtIndex:indexPath.row]; //Show the name on the table
+    //cellRow.textLabel.text = [stringArray1 objectAtIndex:indexPath.row]; //Show the name on the table
     
     return cellRow;
 }
 
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+/*- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 {
     DetailView *detailView = [[DetailView alloc] initWithNibName:@"DetailView" bundle:nil]; //Pop to the detail page
     
@@ -116,7 +121,7 @@
         [self presentViewController:detailView animated:YES completion:nil];
         [detailView updateUILabel];
     }
-}
+}*/
 
 -(IBAction)editButton:(id)sender
 {
