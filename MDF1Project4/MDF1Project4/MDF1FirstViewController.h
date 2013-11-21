@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDF1FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDataDelegate>
+@interface MDF1FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDataDelegate, NSXMLParserDelegate>
 {
     BOOL editMode;
     IBOutlet UIButton *editButton;
@@ -17,6 +17,7 @@
     NSURL *xmlURL;
     NSURLConnection *connection;
     NSMutableData *requestTheData;
+    NSInteger *messages;
 }
 
 @end

@@ -8,19 +8,6 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "MDF1Project3/MDF1FirstViewController.m"
-         timestampString = "406620109.268944"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "90"
-         endingLineNumber = "90"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "MDF1Project3/MDF1FirstViewController.m"
          timestampString = "406620160.857872"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"

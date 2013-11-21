@@ -27,6 +27,8 @@
 							
 - (void)viewDidLoad
 {
+    messages = 0; //Setting messages to zero
+    
     xmlURL = [[NSURL alloc]initWithString:@"http://feeds.adobe.com/webservices/mxna2.cfc?wsdl"]; //We are creating the URL
     
     requestTheXML = [[NSURLRequest alloc] initWithURL:xmlURL]; //
@@ -36,6 +38,14 @@
         connection = [[NSURLConnection alloc]initWithRequest:requestTheXML delegate:self];
         
         requestTheData = [NSMutableData data]; //This holds the data
+    }
+    
+    NSXMLParser *xmlParse = [[NSXMLParser alloc] initWithData:requestTheData]; //We are starting to parse the data we just collected
+    
+    if(xmlParse != nil)
+    {
+        [xmlParse setDelegate:self];
+        [xmlParse parse];
     }
 
     [super viewDidLoad];
@@ -56,7 +66,20 @@
     
     if(requestTheString != nil)
     {
-        NSLog(@"%@", requestTheString);
+        NSLog(@"%@", requestTheString); //Testing to see if the xml gets requested correctly
+    }
+}
+
+-(void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
+{
+    if([elementName isEqualToString:@"wsdl:message"]) //Parsing the food list tag
+    {
+        NSString *nameString = [attributeDict valueForKey:@"name"];
+        
+        if(nameString !=nil)
+        {
+            messages = [nameString intValue];
+        }
     }
 }
 

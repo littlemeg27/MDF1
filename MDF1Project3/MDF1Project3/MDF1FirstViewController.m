@@ -86,10 +86,10 @@
     {
         cellRow = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier: cellIdentity];
     }
-        
-        cellRow.textLabel.text =[[ApplicationState sharedApplicationState].businessArray objectAtIndex:indexPath.row];
+    ApplicationState *theAppState = [ApplicationState sharedApplicationState];
     
-    //cell.textLabel.text = [[DataContainerSingleto sharedDataContainerSingleto].arrayForSaved objectAtIndex:indexPath.row];
+    CustomObject *mapObject = [theAppState.businessArray objectAtIndex:indexPath.row];
+    cellRow.textLabel.text = [mapObject valueForKey:mapObject.nameOfBusiness];
     
     return cellRow;
 }
