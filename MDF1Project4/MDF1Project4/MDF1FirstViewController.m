@@ -27,8 +27,32 @@
 							
 - (void)viewDidLoad
 {
+    xmlURL = [[NSURL alloc]initWithString:@"http://feeds.adobe.com/webservices/mxna2.cfc?wsdl"]; //We are creating the URL
+    
+    requestTheXML = [[NSURLRequest alloc] initWithURL:xmlURL]; //
+    
+    if(requestTheXML != nil)
+    {
+        connection = [[NSURLConnection alloc]initWithRequest:requestTheXML delegate:self];
+        
+        requestTheData = [NSMutable data]; //This holds the data
+    }
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
+    if(data !=nil)
+    {
+        [requestTheData appendData:data];
+    }
+}
+
+-(void)connectionDidFinishLoading:(NSURLConnection *)connection
+{
+    NSString *requestTheString = [[NSString alloc]initWithData:requestTheData encoding:NSASCIIStringEncoding];
 }
 
 - (void)didReceiveMemoryWarning

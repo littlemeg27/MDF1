@@ -8,17 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MDF1FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface MDF1FirstViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, NSURLConnectionDataDelegate>
 {
-    IBOutlet UITableView *tableView;
-    
-    NSMutableArray *stringArray1;
-    NSMutableArray *stringArray2;
-    UIAlertView *editAlert;
     BOOL editMode;
     IBOutlet UIButton *editButton;
+    IBOutlet UITableView *tableView;
+    NSURLRequest *requestTheXML;
+    NSURL *xmlURL;
+    NSURLConnection *connection;
+    NSMutableData *requestTheData;
 }
-
--(void)alertView:(UIAlertView *)alertView;
 
 @end
