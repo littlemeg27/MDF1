@@ -17,6 +17,4 @@
     IBOutlet UIButton *editButton;
 }
 
--(void)alertView:(UIAlertView *)alertView;
-
 @end

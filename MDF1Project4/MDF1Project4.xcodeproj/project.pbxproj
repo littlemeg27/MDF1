@@ -22,9 +22,7 @@
 		BA327BD7183E5DE4005C4FA9 /* MDF1SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA327BD6183E5DE4005C4FA9 /* MDF1SecondViewController.m */; };
 		BA327BD9183E5DE4005C4FA9 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = BA327BD8183E5DE4005C4FA9 /* second.png */; };
 		BA327BDB183E5DE4005C4FA9 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BA327BDA183E5DE4005C4FA9 /* second@2x.png */; };
-		BA327BDE183E5DE4005C4FA9 /* MDF1FirstViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA327BDC183E5DE4005C4FA9 /* MDF1FirstViewController_iPhone.xib */; };
 		BA327BE1183E5DE4005C4FA9 /* MDF1FirstViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA327BDF183E5DE4005C4FA9 /* MDF1FirstViewController_iPad.xib */; };
-		BA327BE4183E5DE4005C4FA9 /* MDF1SecondViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA327BE2183E5DE4005C4FA9 /* MDF1SecondViewController_iPhone.xib */; };
 		BA327BE7183E5DE4005C4FA9 /* MDF1SecondViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA327BE5183E5DE4005C4FA9 /* MDF1SecondViewController_iPad.xib */; };
 		BA327BEF183E5DE4005C4FA9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA327BEE183E5DE4005C4FA9 /* SenTestingKit.framework */; };
 		BA327BF0183E5DE4005C4FA9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA327BB6183E5DE4005C4FA9 /* UIKit.framework */; };
@@ -67,9 +65,7 @@
 		BA327BD6183E5DE4005C4FA9 /* MDF1SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MDF1SecondViewController.m; sourceTree = "<group>"; };
 		BA327BD8183E5DE4005C4FA9 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		BA327BDA183E5DE4005C4FA9 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
-		BA327BDD183E5DE4005C4FA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDF1FirstViewController_iPhone.xib; sourceTree = "<group>"; };
 		BA327BE0183E5DE4005C4FA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDF1FirstViewController_iPad.xib; sourceTree = "<group>"; };
-		BA327BE3183E5DE4005C4FA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDF1SecondViewController_iPhone.xib; sourceTree = "<group>"; };
 		BA327BE6183E5DE4005C4FA9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MDF1SecondViewController_iPad.xib; sourceTree = "<group>"; };
 		BA327BED183E5DE4005C4FA9 /* MDF1Project4Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MDF1Project4Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA327BEE183E5DE4005C4FA9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -143,20 +139,18 @@
 				BA327BC6183E5DE4005C4FA9 /* MDF1AppDelegate.m */,
 				BA327BCE183E5DE4005C4FA9 /* MDF1FirstViewController.h */,
 				BA327BCF183E5DE4005C4FA9 /* MDF1FirstViewController.m */,
+				BA327BDF183E5DE4005C4FA9 /* MDF1FirstViewController_iPad.xib */,
 				BA327BD1183E5DE4005C4FA9 /* first.png */,
 				BA327BD3183E5DE4005C4FA9 /* first@2x.png */,
 				BA327BD5183E5DE4005C4FA9 /* MDF1SecondViewController.h */,
 				BA327BD6183E5DE4005C4FA9 /* MDF1SecondViewController.m */,
+				BA327BE5183E5DE4005C4FA9 /* MDF1SecondViewController_iPad.xib */,
 				BA327BD8183E5DE4005C4FA9 /* second.png */,
 				BA327BDA183E5DE4005C4FA9 /* second@2x.png */,
-				BA327BDC183E5DE4005C4FA9 /* MDF1FirstViewController_iPhone.xib */,
-				BA327BDF183E5DE4005C4FA9 /* MDF1FirstViewController_iPad.xib */,
-				BA327BE2183E5DE4005C4FA9 /* MDF1SecondViewController_iPhone.xib */,
-				BA327BE5183E5DE4005C4FA9 /* MDF1SecondViewController_iPad.xib */,
 				BA327BBD183E5DE4005C4FA9 /* Supporting Files */,
-				BA327C05183E61F9005C4FA9 /* DetailView.xib */,
 				BA327C07183E622A005C4FA9 /* DetailView.h */,
 				BA327C08183E622A005C4FA9 /* DetailView.m */,
+				BA327C05183E61F9005C4FA9 /* DetailView.xib */,
 			);
 			path = MDF1Project4;
 			sourceTree = "<group>";
@@ -274,9 +268,7 @@
 				BA327BD4183E5DE4005C4FA9 /* first@2x.png in Resources */,
 				BA327BD9183E5DE4005C4FA9 /* second.png in Resources */,
 				BA327BDB183E5DE4005C4FA9 /* second@2x.png in Resources */,
-				BA327BDE183E5DE4005C4FA9 /* MDF1FirstViewController_iPhone.xib in Resources */,
 				BA327BE1183E5DE4005C4FA9 /* MDF1FirstViewController_iPad.xib in Resources */,
-				BA327BE4183E5DE4005C4FA9 /* MDF1SecondViewController_iPhone.xib in Resources */,
 				BA327BE7183E5DE4005C4FA9 /* MDF1SecondViewController_iPad.xib in Resources */,
 				BA327C06183E61F9005C4FA9 /* DetailView.xib in Resources */,
 			);
@@ -348,28 +340,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		BA327BDC183E5DE4005C4FA9 /* MDF1FirstViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA327BDD183E5DE4005C4FA9 /* en */,
-			);
-			name = MDF1FirstViewController_iPhone.xib;
-			sourceTree = "<group>";
-		};
 		BA327BDF183E5DE4005C4FA9 /* MDF1FirstViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				BA327BE0183E5DE4005C4FA9 /* en */,
 			);
 			name = MDF1FirstViewController_iPad.xib;
-			sourceTree = "<group>";
-		};
-		BA327BE2183E5DE4005C4FA9 /* MDF1SecondViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BA327BE3183E5DE4005C4FA9 /* en */,
-			);
-			name = MDF1SecondViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
 		BA327BE5183E5DE4005C4FA9 /* MDF1SecondViewController_iPad.xib */ = {
@@ -524,6 +500,7 @@
 				BA327C01183E5DE4005C4FA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA327C02183E5DE4005C4FA9 /* Build configuration list for PBXNativeTarget "MDF1Project4Tests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +509,7 @@
 				BA327C04183E5DE4005C4FA9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

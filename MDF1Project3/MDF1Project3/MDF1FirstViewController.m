@@ -64,7 +64,7 @@
         //[stringArray1 removeObjectAtIndex:indexPath.row];
         //[stringArray2 removeObjectAtIndex:indexPath.row];
         
-        [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:TRUE];
+  //      [tableView deleteRowsAtIndexPaths:[NSMutableArray arrayWithObject:indexPath] withRowAnimation:TRUE];
     }
 }
 
